@@ -1,4 +1,6 @@
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html,
@@ -329,9 +331,13 @@ a {
   padding: 2px 6px; }
 
 .post__title {
+  background-image: -webkit-linear-gradient(left, #ff2c2c, #7a5e91);
   /* For Chrome and Safari */
+  background-image: -moz-linear-gradient(left, #ff2c2c, #7a5e91);
   /* For old Fx (3.6 to 15) */
+  background-image: -ms-linear-gradient(left, #ff2c2c, #7a5e91);
   /* For pre-releases of IE 10*/
+  background-image: -o-linear-gradient(left, #ff2c2c, #7a5e91);
   /* For old Opera (11.1 to 12.0) */
   background-image: linear-gradient(to right, #ff2c2c, #7a5e91);
   /* Standard syntax; must be last */
@@ -389,9 +395,7 @@ a {
   font-size: 0.9rem; }
 
 pre {
-  -moz-tab-size: 2;
-    -o-tab-size: 2;
-       tab-size: 2; }
+  tab-size: 2; }
   pre code {
     white-space: pre-wrap; }
 
@@ -663,7 +667,7 @@ a.badge-tag {
   color: #d28445; }
 
 .theme-base-0a .sidebar {
-  background-color: #f4bf75; }
+  background-color: #b6b8ab; }
 
 .theme-base-0a .content a {
   color: #f4bf75; }
@@ -715,5 +719,3 @@ a.badge-tag {
 
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536; }
-
-/*# sourceMappingURL=hyde-hyde.css.map */
